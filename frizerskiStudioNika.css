@@ -639,3 +639,384 @@ footer {
 .contactPair a {
     color: #AB08D4;
 }
+
+/*==SCREEN SIZES==*/
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    #landingPage img {
+        height: 400px;
+        margin-top: -11%;
+        margin-left: -15%;
+    }
+
+    #landingPage h1 {
+        font-size: 30px;
+    }
+
+    #landingPage h2 {
+        font-size: 20px;
+        margin-top: -10%;
+    }
+
+    #landingPage button, #landingPage a {
+        font-size: 12px;
+    }
+
+    #aboutUs {
+        display: flex;
+        text-align: left;
+        align-items: start;
+        padding-bottom: 100px;
+    }
+
+    #aboutUsPerson1, #aboutUsPerson2 {
+        display: flex;
+        gap: 50px;
+    }
+
+    #aboutUsPerson1 p, #aboutUsPerson2 p {
+        max-width: 400px;
+    }
+
+    #gallery {
+        margin-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    #gallery .img2 {
+        display: block;
+    }
+
+    .haircutType {
+        margin-bottom: 50px;
+    }
+
+    .images {
+        gap: 50px;
+    }
+
+    #product2 {
+        display: flex;
+    }
+
+    #giftCards {
+        margin-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    #contact {
+        margin-top: 100px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #footerSectionContact {
+        justify-content: center;
+    }
+
+    #footerSectionLogo {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #landingPage img {
+        height: 400px;
+        margin-top: -13%;
+        margin-left: -20%;
+    }
+
+    #landingPage h1 {
+        font-size: 50px;
+        width: 400px;
+        margin-top: -5%;
+    }
+
+    #landingPage h2 {
+        font-size: 30px;
+        width: 500px;
+        margin-top: -5%;
+    }
+
+    #landingPage button, #landingPage a {
+        font-size: 15px;
+        margin-top: 5%;
+    }
+
+    #aboutUs {
+        display: flex;
+        text-align: left;
+        align-items: start;
+        padding-bottom: 100px;
+    }
+
+    #aboutUsPerson1 img {
+        height: 430px;
+    }
+
+    #aboutUsPerson1, #aboutUsPerson2 {
+        display: flex;
+        gap: 100px;
+    }
+
+    #aboutUsPerson1 p, #aboutUsPerson2 p {
+        max-width: 500px;
+    }
+
+    #aboutUsPerson2 p:first-of-type {
+        margin-top: 20%;
+    }
+
+    #gallery {
+        margin-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    #gallery .img2, #gallery .img3 {
+        display: block;
+    }
+
+    .haircutType {
+        margin-bottom: 50px;
+    }
+
+    .images {
+        gap: 50px;
+    }
+
+    #product2, #product4, #product5 {
+        display: flex;
+    }
+
+    #productCards {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .threeItems {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #giftCards {
+        margin-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    #contact {
+        margin-top: 100px;
+    }
+
+    #contact #ownerImg {
+        display: flex;
+        height: 500px;
+        width: auto;
+        border-radius: 20px;
+    }
+
+    #form {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    form {
+        width: 50%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #footerSectionContact {
+        justify-content: center;
+    }
+
+    #footerSectionLogo {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1550px) {
+    .navbar {
+        display: none;
+    }
+
+    #desktopNavbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        background-color: white;
+    }
+
+    #desktopNavbar img {
+        height: 75px;
+        width: 75px;
+    }
+
+    #desktopNavbar a {
+        text-decoration: none;
+        color: black
+    }
+    
+    #landingPage img {
+        height: 500px;
+        margin-top: -16%;
+        margin-left: 5%;
+    }
+
+    #landingPage h1 {
+        font-size: 60px;
+        width: 400px;
+        margin-top: -30%;
+    }
+
+    #landingPage h2 {
+        font-size: 30px;
+        width: 500px;
+        margin-top: -5%;
+    }
+
+    #landingPage button, #landingPage a {
+        font-size: 15px;
+        margin-top: 20%;
+    }
+
+    #aboutUs {
+        display: flex;
+        text-align: left;
+        align-items: start;
+        padding-bottom: 100px;
+        width: 70%;
+        padding-left: 20%;
+        padding-right: 10%;
+        margin-top: 100px;
+    }
+
+    #aboutUsPerson1 img {
+        height: 430px;
+    }
+
+    #aboutUsPerson1, #aboutUsPerson2 {
+        display: flex;
+        gap: 100px;
+    }
+
+    #aboutUsPerson1 p, #aboutUsPerson2 p {
+        max-width: 500px;
+    }
+
+    #aboutUsPerson2 p:first-of-type {
+        margin-top: 20%;
+    }
+
+    #services {
+        max-width: 60%;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    #gallery {
+        margin-top: 100px;
+        padding-bottom: 100px;
+        max-width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #gallery .img2, #gallery .img3 {
+        display: block;
+    }
+
+    .haircutType {
+        margin-bottom: 50px;
+    }
+
+    .images {
+        gap: 50px;
+    }
+
+    .images img {
+        height: 300px;
+        width: 300px;
+    }
+
+    #productsTable {
+        max-width: 80%;
+        margin-left: 10%;
+    }
+
+    #product2, #product3, #product4, #product5, #product6 {
+        display: flex;
+    }
+
+    #productCards {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .threeItems {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #giftCards {
+        margin-top: 100px;
+        padding-bottom: 100px;
+        max-width: 60%;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    #extraOffers {
+        max-width: 60%;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    #contact {
+        margin-top: 100px;
+        max-width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #contact #ownerImg {
+        display: flex;
+        height: 500px;
+        width: auto;
+        border-radius: 20px;
+    }
+
+    #form {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    form {
+        width: 50%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #footerSectionContact {
+        justify-content: center;
+    }
+
+    #footerSectionLogo {
+        margin-top: 15px;
+    }
+}

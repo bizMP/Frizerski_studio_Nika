@@ -81,12 +81,14 @@
 
         <div id="aboutUsPerson2">
             <img src="Img/nika.jpg" alt="owner's daughter">
-            <p><span class="highlight">Posebna zgodba našega studia je tudi moja hči, Nika.</span></p>
-            <p>
-                Nika je že od malih nog preživljala veliko časa ob meni v salonu. Opazovala je, se učila in se navduševala nad vsakim korakom — od barvanja do striženja in stylinga. Ker je bila vedno ob meni, sem se odločila, da bo studio nosil njeno ime, saj je prav ona del te zgodbe in navdiha.
-                Danes je Nika moja naslednica in z velikim ponosom gledam s kakšnim veseljem nadaljuje delo v salonu. Stranke ji zelo zaupajo, saj ima izjemen občutek za lase, je pozorna, nežna in vedno pripravljena prisluhniti željam. Njena energija je mirna in prijazna, zato se pri njej stranke počutijo sproščeno in varno. <br>
-                Lepi lasje so naš navdih – vaše zadovoljstvo pa naša največja nagrada.
-            </p>
+            <div>
+                <p><span class="highlight">Posebna zgodba našega studia je tudi moja hči, Nika.</span></p>
+                <p>
+                    Nika je že od malih nog preživljala veliko časa ob meni v salonu. Opazovala je, se učila in se navduševala nad vsakim korakom — od barvanja do striženja in stylinga. Ker je bila vedno ob meni, sem se odločila, da bo studio nosil njeno ime, saj je prav ona del te zgodbe in navdiha.
+                    Danes je Nika moja naslednica in z velikim ponosom gledam s kakšnim veseljem nadaljuje delo v salonu. Stranke ji zelo zaupajo, saj ima izjemen občutek za lase, je pozorna, nežna in vedno pripravljena prisluhniti željam. Njena energija je mirna in prijazna, zato se pri njej stranke počutijo sproščeno in varno. <br>
+                    Lepi lasje so naš navdih – vaše zadovoljstvo pa naša največja nagrada.
+                </p>
+            </div>
         </div>
     </section>
 
@@ -195,41 +197,47 @@
                 <div class="showMoreButtonLeft">
                     <button type="button"><img src="Img/arrow.png" alt="arrowIcon"></button>
                 </div>
+                
+                <div id="productCards">
+                    <div class="threeItems">
+                        <div class="product" id="product1">
+                            <img src="#" alt="product">
+                            <p>Ime produkta</p>
+                            <button type="button">Preberi več</button>
+                        </div>
 
-                <div class="product" id="product1">
-                    <img src="#" alt="product">
-                    <p>Ime produkta</p>
-                    <button type="button">Preberi več</button>
-                </div>
+                        <div class="product" id="product2">
+                            <img src="#" alt="product">
+                            <p>Ime produkta</p>
+                            <button type="button">Preberi več</button>
+                        </div>
 
-                <div class="product" id="product2">
-                    <img src="#" alt="product">
-                    <p>Ime produkta</p>
-                    <button type="button">Preberi več</button>
-                </div>
+                        <div class="product" id="product3">
+                            <img src="#" alt="product">
+                            <p>Ime produkta</p>
+                            <button type="button">Preberi več</button>
+                        </div>
+                    </div>
+                    
+                    <div class="threeItems">
+                        <div class="product" id="product4">
+                            <img src="#" alt="product">
+                            <p>Ime produkta</p>
+                            <button type="button">Preberi več</button>
+                        </div>
 
-                <div class="product" id="product3">
-                    <img src="#" alt="product">
-                    <p>Ime produkta</p>
-                    <button type="button">Preberi več</button>
-                </div>
+                        <div class="product" id="product5">
+                            <img src="#" alt="product">
+                            <p>Ime produkta</p>
+                            <button type="button">Preberi več</button>
+                        </div>
 
-                <div class="product" id="product4">
-                    <img src="#" alt="product">
-                    <p>Ime produkta</p>
-                    <button type="button">Preberi več</button>
-                </div>
-
-                <div class="product" id="product5">
-                    <img src="#" alt="product">
-                    <p>Ime produkta</p>
-                    <button type="button">Preberi več</button>
-                </div>
-
-                <div class="product" id="product6">
-                    <img src="#" alt="product">
-                    <p>Ime produkta</p>
-                    <button type="button">Preberi več</button>
+                        <div class="product" id="product6">
+                            <img src="#" alt="product">
+                            <p>Ime produkta</p>
+                            <button type="button">Preberi več</button>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="showMoreButtonRight">
@@ -284,32 +292,39 @@
         <h1>KONTAKT</h1>
         <p>Veseliva se sodelovanja z Vami. Odgovorili Vam bova v najkrajšem možnem času.</p>
 
-        <form>
-            <label for="nameSurname">Ime in Priimek <span class="required">*</span></label>
-            <input type="text" id="nameSurname" name="Ime in Priimek" required>
+        <div id="form">
+            <form>
+                <label for="nameSurname">Ime in Priimek <span class="required">*</span></label>
+                <input type="text" id="nameSurname" name="Ime in Priimek" required>
 
-            <label for="tel">Telefonska številka <span class="required">*</span></label>
-            <input type="tel" id="tel" name="Telefonska številka" required>
+                <label for="tel">Telefonska številka <span class="required">*</span></label>
+                <input type="tel" id="tel" name="Telefonska številka" required>
 
-            <label for="email">E-mail <span class="required">*</span></label>
-            <input type="email" id="email" name="E-mail" required>
+                <label for="email">E-mail <span class="required">*</span></label>
+                <input type="email" id="email" name="E-mail" required>
 
-            <label for="subject">Zadeva <span class="required">*</span></label>
-            <input type="text" id="subject" name="Zadeva" required>
-            
-            <label for="message">Sporočilo <span class="required">*</span></label>
-            <textarea id="message" name="Sporočilo" required></textarea>
+                <label for="subject">Zadeva <span class="required">*</span></label>
+                <input type="text" id="subject" name="Zadeva" required>
+                
+                <label for="message">Sporočilo <span class="required">*</span></label>
+                <textarea id="message" name="Sporočilo" required></textarea>
 
-            <div id="sendContact">
-                <button type="submit">Pošlji</button>
-                <img src="Img/phoneIcon.png" alt="telephone">
-                <a href="tel:+386041279487">041 279 487</a>
-                <img src="Img/emailIcon.png" alt="email">
-                <a href="mailto:karmen.dezelak11@gmail.com">karmen.dezelak11@gmail.com</a>
-            </div>
-        </form> 
+                <div id="sendContact">
+                    <button type="submit">Pošlji</button>
+                    <div class="contactPair">
+                        <img src="Img/phoneIcon.png" alt="telephone">
+                        <a href="tel:+386041279487">041 279 487</a>
+                    </div>
 
-        <img src="Img/karmenNika.jpg" alt="owners" id="ownerImg">
+                    <div class="contactPair">
+                        <img src="Img/emailIcon.png" alt="email">
+                        <a href="mailto:karmen.dezelak11@gmail.com">karmen.dezelak11@gmail.com</a>
+                    </div>
+                </div>
+            </form> 
+
+            <img src="Img/karmenNika.jpg" alt="owners" id="ownerImg">
+        </div>
     </section>
 
     <footer>
