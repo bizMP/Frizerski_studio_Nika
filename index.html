@@ -25,26 +25,28 @@
         
         <div class="nav-menu" id="navMenu">
             <ul>
-                <li><a href="#">DOMOV</a></li>
-                <li><a href="#">O NAS</a></li>
-                <li><a href="#">STORITVE</a></li>
-                <li><a href="#">PRODUKTI</a></li>
-                <li><a href="#">DARILNI BONI</a></li>
-                <li><a href="#">DODATNA PONUDBA</a></li>
-                <li><a href="#">KONTAKT</a></li>
+                <li><a href="#landingPage">DOMOV</a></li>
+                <li><a href="#aboutUs">O NAS</a></li>
+                <li><a href="#services">STORITVE</a></li>
+                <li><a href="#gallery">GALERIJA</a></li>
+                <li><a href="#products">PRODUKTI</a></li>
+                <li><a href="#giftCards">DARILNI BONI</a></li>
+                <li><a href="#extraOffers">DODATNA PONUDBA</a></li>
+                <li><a href="#contact">KONTAKT</a></li>
             </ul>
         </div>
     </nav>
 
     <nav id="desktopNavbar">
-        <a href="#">DOMOV</a>
-        <a href="#">O NAS</a>
-        <a href="#">STORITVE</a>
-        <a href="#">PRODUKTI</a>
+        <a href="#landingPage">DOMOV</a>
+        <a href="#aboutUs">O NAS</a>
+        <a href="#services">STORITVE</a>
+        <a href="#gallery">GALERIJA</a>
         <img src="Img/logo.png" alt="logo">
-        <a href="#">DARILNI BONI</a>
-        <a href="#">DODATNA PONUDBA</a>
-        <a href="#">KONTAKT</a>
+        <a href="#products">PRODUKTI</a>
+        <a href="#giftCards">DARILNI BONI</a>
+        <a href="#extraOffers">DODATNA PONUDBA</a>
+        <a href="#contact">KONTAKT</a>
     </nav>
 
     <section id="landingPage">
@@ -52,8 +54,8 @@
             <h1>LEPI LASJE SO NAŠ NAVDIH</h1>
             <h2>VAŠE ZADOVOLJSTVO PA NAŠ CILJ</h2>
             
-            <button type="button">Naroči se</button>
-            <a href="#">Poglej več</a>
+            <button type="button" onclick="location.href='#contact'">Naroči se</button>
+            <a href="#aboutUs">Poglej več</a>
         </div>
 
         <img src="Img/landingPageImg.png" alt="landingPageImg">
@@ -72,7 +74,7 @@
 
                     Po mnogih letih dela v frizerskem salonu, sem se pred sedmimi leti odločila, da svojo pot nadaljujem samostojno. Tako se je začela zgodba Frizerskega studia Nika, ki je nastal iz želje po <span class="highlight">pristnem, kakovostnem in osebnem pristopu k strankam.</span> <br><br>
 
-                    Danes, v Frizerskem studiu Nika, želim prav to: da se pri meni počutite <span class=highlight>sprejeti, poslušani in urejeni.</span> Vsaki stranki se posvetim individualno, ker verjamem, da je vsaka zgodba drugačna. Naj bo to osvežitev pričeske, barvanje, nega ali popolna sprememba — moj cilj je, da odidete z <span class="highlight">nasmehom in samozavestjo.</span>
+                    Danes, v Frizerskem studiu Nika, želim prav to: da se pri meni počutite <span class="highlight">sprejeti, poslušani in urejeni.</span> Vsaki stranki se posvetim individualno, ker verjamem, da je vsaka zgodba drugačna. Naj bo to osvežitev pričeske, barvanje, nega ali popolna sprememba — moj cilj je, da odidete z <span class="highlight">nasmehom in samozavestjo.</span>
                 </p>
             </div>
 
@@ -94,6 +96,15 @@
 
     <section id="services">
         <h1>STORITVE</h1>
+
+        <p style="margin-bottom: 50px;">
+            V našem frizerskem studiu ponujamo <span style="color:white">celovite frizerske storitve za ženske, moške in otroke.</span> Izvajamo vsa modna in klasična striženja, s posebnim poudarkom na modernih moških striženjih in fade tehnikah (low, mid, high fade) ter natančnem oblikovanju pričesk.
+            Nudimo različna barvanje las, pramena in sodobne tehnike barvanja.
+            Izvajamo tudi keratinsko brazilsko ravnanje las, ki lasem povrne gladkost, sijaj in obvladljivost.
+            Posebno skrb namenjamo zdravju las in lasišča. Izvajamo negovalne tretmaje za vse vrste anomalij lasišča (suho, mastno, občutljivo lasišče, prhljaj, izpadanje las) ter intenzivne negovalne in regenerativne tretmaje za poškodovane in kemično obdelane lase.
+            Pri vseh storitvah uporabljamo izključno profesionalno lasno kozmetiko Kemon Actyva in Kemon Care, ki zagotavlja vrhunsko nego, zaščito ter dolgoročno zdravje las.
+            Kozmetika je izdelana po visokih standardih, vsebuje visok delež naravnih sestavin ter sodi v kategorijo green & clean cosmetics s certifikatom. Linija Actyva je dodatno dermatološko testirana, kar zagotavlja varno in učinkovito nego tudi za občutljivo lasišče.
+        </p>
         
         <div class="servicesCard">
             <h3>Ime storitve1</h3>
@@ -101,7 +112,7 @@
             
             <img src="#" alt="service1">
             
-            <button type="button">Naroči se</button>
+            <button type="button" onclick="location.href='#contact'">Naroči se</button>
         </div>
 
         <div class="servicesCard">
@@ -110,7 +121,7 @@
             
             <img src="#" alt="service2">
 
-            <button type="button">Naroči se</button>
+            <button type="button" onclick="location.href='#contact'">Naroči se</button>
         </div>
 
         <div class="servicesCard">
@@ -119,7 +130,7 @@
             
             <img src="#" alt="service3">
             
-            <button type="button">Naroči se</button>
+            <button type="button" onclick="location.href='#contact'">Naroči se</button>
         </div>
 
         <div class="showMoreButton">
@@ -131,54 +142,177 @@
     <section id="gallery">
         <h1>GALERIJA</h1>
 
-        <h3>Tip frizure 1</h3>
-        <div class="haircutType">
+        <h3>Barvanje</h3>
+        <div class="haircutType" id="coloring">
             <div class="showMoreButtonLeft">
-                <button type="button"><img src="Img/arrow.png" alt="arrowIcon"></button>
+                <button type="button"><img src="Img/arrow.png" alt="arrowIcon" onclick="gallerySwitchLeft('coloring')"></button>
             </div>
-            <div class="images">
-                <img src="#" alt="frizuraTip1" class="img1">
-                <img src="#" alt="frizuraTip1" class="img2">
-                <img src="#" alt="frizuraTip1" class="img3">
+
+            <div class="imgDiv">
+                <div class="images" id="imagesColoring">
+                    <img src="Img/barvanje/barvanje1.jpeg" alt="Barvanje"  id="img1Coloring">
+                    <img src="Img/barvanje/barvanje2.jpeg" alt="Barvanje"  id="img2Coloring">
+                    <img src="Img/barvanje/barvanje3.jpeg" alt="Barvanje"  id="img3Coloring">
+                    <img src="Img/barvanje/barvanje4.jpeg" alt="Barvanje"  id="img4Coloring">
+                    <img src="Img/barvanje/barvanje5.jpeg" alt="Barvanje"  id="img5Coloring">
+                    <img src="Img/barvanje/barvanje6.jpeg" alt="Barvanje"  id="img6Coloring">
+                    <img src="Img/barvanje/barvanje7.jpeg" alt="Barvanje"  id="img7Coloring">
+                    <img src="Img/barvanje/barvanje8.jpeg" alt="Barvanje"  id="img8Coloring">
+                    <img src="Img/barvanje/barvanje9.jpeg" alt="Barvanje"  id="img9Coloring">
+                </div>
             </div>
+
             <div class="showMoreButtonRight">
-                <button type="button"><img src="Img/arrow.png" alt="arrowIcon"></button>
+                <button type="button"><img src="Img/arrow.png" alt="arrowIcon" onclick="gallerySwitchRight('coloring')"></button>
             </div>
         </div>
         
-        <h3>Tip frizure 2</h3>
+        <h3>Actyva Nega</h3>
         <div class="haircutType">
-            <div class="showMoreButtonLeft">
-                <button type="button"><img src="Img/arrow.png" alt="arrowIcon"></button>
+            <div class="showMoreButtonLeft" id="actyvaCare">
+                <button type="button"><img src="Img/arrow.png" alt="arrowIcon" onclick="gallerySwitchLeft('actyvaCare')"></button>
             </div>
-            <div class="images">
-                <img src="#" alt="frizuraTip2" class="img1">
-                <img src="#" alt="frizuraTip2" class="img2">
-                <img src="#" alt="frizuraTip2" class="img3">
+
+            <div class="imgDiv">
+                <div class="images" id="imagesActyvaCare">
+                    <img src="Img/actyvaNega/nega1.jpeg" alt="Actyva Nega" >
+                    <img src="Img/actyvaNega/nega2.jpeg" alt="Actyva Nega" >
+                    <img src="Img/actyvaNega/nega3.jpeg" alt="Actyva Nega" >
+                    <img src="Img/actyvaNega/nega4.jpeg" alt="Actyva Nega" >
+                    <img src="Img/actyvaNega/nega5.jpeg" alt="Actyva Nega" >
+                    <img src="Img/actyvaNega/nega6.jpeg" alt="Actyva Nega" >
+                    <img src="Img/actyvaNega/nega7.jpeg" alt="Actyva Nega" >
+                    <img src="Img/actyvaNega/nega8.jpeg" alt="Actyva Nega" >
+                </div>
             </div>
+
             <div class="showMoreButtonRight">
-                <button type="button"><img src="Img/arrow.png" alt="arrowIcon"></button>
+                <button type="button"><img src="Img/arrow.png" alt="arrowIcon" onclick="gallerySwitchRight('actyvaCare')"></button>
             </div>
         </div>
         
-        <h3>Tip frizure 3</h3>
-        <div class="haircutType">
+        <h3>Spete Pričeske</h3>
+        <div class="haircutType" id="braidedHairstyles">
             <div class="showMoreButtonLeft">
-                <button type="button"><img src="Img/arrow.png" alt="arrowIcon"></button>
+                <button type="button"><img src="Img/arrow.png" alt="arrowIcon" onclick="gallerySwitchLeft('braidedHairstyles')"></button>
             </div>
-            <div class="images">
-                <img src="#" alt="frizuraTip3" class="img1">
-                <img src="#" alt="frizuraTip3" class="img2">
-                <img src="#" alt="frizuraTip3" class="img3">
+
+            <div class="imgDiv">
+                <div class="images" id="imagesBraidedHairstyles">
+                    <img src="Img/spetePriceske/spete_priceske1.jpeg" alt="Spete Pričeske" >
+                    <img src="Img/spetePriceske/spete_priceske2.jpeg" alt="Spete Pričeske" >
+                    <img src="Img/spetePriceske/spete_priceske3.jpeg" alt="Spete Pričeske" >
+                    <img src="Img/spetePriceske/spete_priceske4.jpeg" alt="Spete Pričeske" >
+                    <img src="Img/spetePriceske/spete_priceske5.jpeg" alt="Spete Pričeske" >
+                    <img src="Img/spetePriceske/spete_priceske6.jpeg" alt="Spete Pričeske" >
+                </div>
             </div>
+
             <div class="showMoreButtonRight">
-                <button type="button"><img src="Img/arrow.png" alt="arrowIcon"></button>
+                <button type="button"><img src="Img/arrow.png" alt="arrowIcon" onclick="gallerySwitchRight('braidedHairstyles')"></button>
             </div>
         </div>
 
-        <div class="showMoreButton">
+        <h3 class="hiddenGallery">Moško Modno Striženje</h3>
+        <div class="haircutType hiddenGallery" id="maleModernCuts">
+            <div class="showMoreButtonLeft">
+                <button type="button"><img src="Img/arrow.png" alt="arrowIcon" onclick="gallerySwitchLeft('maleModernCuts')"></button>
+            </div>
+
+            <div class="imgDiv">
+                <div class="images" id="imagesMaleModernCuts">
+                    <img src="Img/modnoStrizenje/modno1.jpeg" alt="Moško Modno Striženje" >
+                    <img src="Img/modnoStrizenje/modno2.jpeg" alt="Moško Modno Striženje" >
+                    <img src="Img/modnoStrizenje/modno3.jpeg" alt="Moško Modno Striženje" >
+                    <img src="Img/modnoStrizenje/modno4.jpeg" alt="Moško Modno Striženje" >
+                    <img src="Img/modnoStrizenje/modno5.jpeg" alt="Moško Modno Striženje" >
+                    <img src="Img/modnoStrizenje/modno6.jpeg" alt="Moško Modno Striženje" >
+                    <img src="Img/modnoStrizenje/modno7.jpeg" alt="Moško Modno Striženje" >
+                    <img src="Img/modnoStrizenje/modno8.jpeg" alt="Moško Modno Striženje" >
+                    <img src="Img/modnoStrizenje/modno9.jpeg" alt="Moško Modno Striženje" >
+                    <img src="Img/modnoStrizenje/modno10.jpeg" alt="Moško Modno Striženje" >
+                    <img src="Img/modnoStrizenje/modno11.jpeg" alt="Moško Modno Striženje" >
+                    <img src="Img/modnoStrizenje/modno12.jpeg" alt="Moško Modno Striženje" >
+                </div>
+            </div>
+
+            <div class="showMoreButtonRight">
+                <button type="button"><img src="Img/arrow.png" alt="arrowIcon" onclick="gallerySwitchRight('maleModernCuts')"></button>
+            </div>
+        </div>
+
+        <h3 class="hiddenGallery">Keratinsko Ravnanje Las</h3>
+        <div class="haircutType hiddenGallery" id="keratinStraightening">
+            <div class="showMoreButtonLeft">
+                <button type="button"><img src="Img/arrow.png" alt="arrowIcon" onclick="gallerySwitchLeft('keratinStraightening')"></button>
+            </div>
+
+            <div class="imgDiv">
+                <div class="images" id="imagesKeratinStraightening">
+                    <img src="Img/keratinskoRavnanje/keratinsko_ravnanje1.jpeg" alt="Keratinsko Ravnanje Las" >
+                    <img src="Img/keratinskoRavnanje/keratinsko_ravnanje2.jpeg" alt="Keratinsko Ravnanje Las" >
+                </div>
+            </div>
+
+            <div class="showMoreButtonRight">
+                <button type="button"><img src="Img/arrow.png" alt="arrowIcon" onclick="gallerySwitchRight('keratinStraightening')"></button>
+            </div>
+        </div>
+
+        <h3 class="hiddenGallery">Ličenje</h3>
+        <div class="haircutType hiddenGallery" id="makeup">
+            <div class="showMoreButtonLeft">
+                <button type="button"><img src="Img/arrow.png" alt="arrowIcon" onclick="gallerySwitchLeft('makeup')"></button>
+            </div>
+
+            <div class="imgDiv">
+                <div class="images" id="imagesMakeup">
+                    <img src="Img/licenje/licenje1.jpeg" alt="Ličenje">
+                    <img src="Img/licenje/licenje2.jpeg" alt="Ličenje">
+                    <img src="Img/licenje/licenje3.jpeg" alt="Ličenje">
+                </div>
+            </div>
+
+            <div class="showMoreButtonRight">
+                <button type="button"><img src="Img/arrow.png" alt="arrowIcon" onclick="gallerySwitchRight('makeup')"></button>
+            </div>
+        </div>
+
+        <h3 class="hiddenGallery">Transformacije</h3>
+        <div class="haircutType hiddenGallery" id="transformations">
+            <div class="showMoreButtonLeft">
+                <button type="button"><img src="Img/arrow.png" alt="arrowIcon" onclick="gallerySwitchLeft('transformations')"></button>
+            </div>
+
+            <div class="imgDiv">
+                <div class="images" id="imagesTransformations">
+                    <img src="Img/prejPotem/prejPotem1.jpeg" alt="prej/Potem">
+                    <img src="Img/prejPotem/prejPotem2.jpeg" alt="prej/Potem">
+                    <img src="Img/prejPotem/prejPotem3.jpeg" alt="prej/Potem">
+                    <img src="Img/prejPotem/prejPotem4.jpeg" alt="prej/Potem">
+                    <img src="Img/prejPotem/prejPotem5.jpeg" alt="prej/Potem">
+                    <img src="Img/prejPotem/prejPotem6.jpeg" alt="prej/Potem">
+                    <img src="Img/prejPotem/prejPotem7.jpeg" alt="prej/Potem">
+                    <img src="Img/prejPotem/prejPotem8.jpeg" alt="prej/Potem">
+                    <img src="Img/prejPotem/prejPotem9.jpeg" alt="prej/Potem">
+                    <img src="Img/prejPotem/prejPotem10.jpeg" alt="prej/Potem">
+                    <img src="Img/prejPotem/prejPotem11.jpeg" alt="prej/Potem">
+                </div>
+            </div>
+
+            <div class="showMoreButtonRight">
+                <button type="button"><img src="Img/arrow.png" alt="arrowIcon" onclick="gallerySwitchRight('transformations')"></button>
+            </div>
+        </div>
+
+        <div class="showMoreButton" id="showMoreButtonGallery">
             <p>PRIKAŽI VEČ</p>
-            <button type="button"><img src="Img/arrow.png" alt="arrowIcon"></button>
+            <button type="button"><img src="Img/arrow.png" alt="arrowIcon" onclick = "showMoreButton('gallery')"></button>
+        </div>
+
+        <div class="showLessButton" id="showLessButtonGallery">
+            <p>SKRIJ</p>
+            <button type="button"><img src="Img/arrow.png" alt="arrowIcon" onclick="showLessButton('gallery')"></button>
         </div>
     </section>
 
@@ -265,21 +399,21 @@
             <h1>DODATNA PONUDBA 1</h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
             <img src="#" alt="offer">
-            <button type="button">Naroči se</button>
+            <button type="button" onclick="location.href='#contact'">Naroči se</button>
         </div>
 
         <div class="extraOffer">
             <h1>DODATNA PONUDBA 2</h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
             <img src="#" alt="offer">
-            <button type="button">Naroči se</button>
+            <button type="button" onclick="location.href='#contact'">Naroči se</button>
         </div>
 
         <div class="extraOffer">
             <h1>DODATNA PONUDBA 3</h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
             <img src="#" alt="offer">
-            <button type="button">Naroči se</button>
+            <button type="button" onclick="location.href='#contact'">Naroči se</button>
         </div>
 
         <div class="showMoreButton">
@@ -343,8 +477,8 @@
         <div id="footerSectionLogo">
             <img src="Img/logo.png" alt="logo">
             <div id="socialMedia">
-                <img src="Img/facebookLogo.png" alt="Facebook">
-                <img src="Img/InstagramLogo.png" alt="Instagram">
+                <a href="https://www.facebook.com/profile.php?id=100046418272417"><img src="Img/facebookLogo.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/frizerskistudionika/"><img src="Img/InstagramLogo.png" alt="Instagram"></a>
             </div>
         </div>
 

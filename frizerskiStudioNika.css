@@ -12,6 +12,10 @@ body {
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 button {
     background-color: #AB08D4;
     color: white;
@@ -20,15 +24,24 @@ button {
     padding-right: 30px;
     border: none;
     border-radius: 100px;
+    cursor: pointer;
 }
 
 .highlight {
     color: #AB08D4;
 }
 
-.showMoreButton img {
+.showMoreButton img, .showLessButton img {
     height: 10px;
     width: 10px;
+}
+
+.showLessButton {
+    display: none;
+}
+
+.showLessButton img {
+    transform: rotate(180deg);
 }
 
 .showMoreButtonLeft img {
@@ -146,8 +159,9 @@ button {
 .nav-menu.active li:nth-child(3) { transition-delay: 0.2s; }
 .nav-menu.active li:nth-child(4) { transition-delay: 0.25s; }
 .nav-menu.active li:nth-child(5) { transition-delay: 0.3s; }
-.nav-menu.active li:nth-child(6) { transition-delay: 0.3s; }
-.nav-menu.active li:nth-child(7) { transition-delay: 0.3s; }
+.nav-menu.active li:nth-child(6) { transition-delay: 0.35s; }
+.nav-menu.active li:nth-child(7) { transition-delay: 0.4s; }
+.nav-menu.active li:nth-child(8) { transition-delay: 0.45s; }
 
 .nav-menu a {
     display: block;
@@ -340,23 +354,25 @@ button {
     align-items: center;
 }
 
+.imgDiv {
+    overflow: hidden;
+}
+
 .images {
     display: flex;
     justify-content: space-around;
-}
-
-.images .img2, .images .img3 {
-    display: none;
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s ease;
 }
 
 .images img {
-    height: 200px;
+    height: auto;
     width: 200px;
-    box-shadow: 0px 0px 10px black;
     border-radius: 20px;
 }
 
-#gallery .showMoreButton button {
+#gallery .showMoreButton button, #gallery .showLessButton button {
     box-shadow: 0px 0px 5px white;
 }
 
@@ -366,6 +382,10 @@ button {
 
 #gallery h3:last-of-type {
     color: white;
+}
+
+.hiddenGallery {
+    display: none;
 }
 
 /*==PRODUCTS==*/
@@ -683,16 +703,8 @@ footer {
         padding-bottom: 100px;
     }
 
-    #gallery .img2 {
-        display: block;
-    }
-
     .haircutType {
         margin-bottom: 50px;
-    }
-
-    .images {
-        gap: 50px;
     }
 
     #product2 {
@@ -785,7 +797,7 @@ footer {
     }
 
     .images {
-        gap: 50px;
+        width: 600px;
     }
 
     #product2, #product4, #product5 {
@@ -855,6 +867,7 @@ footer {
         position: fixed;
         width: 100%;
         background-color: white;
+        z-index: 100;
     }
 
     #desktopNavbar img {
@@ -941,11 +954,11 @@ footer {
     }
 
     .images {
-        gap: 50px;
+        width: 900px;
     }
 
     .images img {
-        height: 300px;
+        height: auto;
         width: 300px;
     }
 
